@@ -96,7 +96,6 @@ body {
 }
 
 .nav a.active {
-    /* background-color: #FF6600; */
     color: orange;
 }
 
@@ -107,15 +106,43 @@ body {
 
 /* Two Column Layout for Home */
 .two-column {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    border: 2px solid #bfbfbf;
+    background-color: #dcdcdc;
+    margin-top: 15px;
+    gap: 0;
+}
+
+.two-column::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #FF6600;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.two-column>div {
+    padding: 10px 15px;
 }
 
 .content-section {
     background-color: #E8E8E8;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.two-column .content-section {
+    margin: 0;
+    border-bottom: 2px solid #bfbfbf;
+}
+
+.two-column>div .content-section:last-child {
+    border-bottom: none;
 }
 
 .content-section h3 {
@@ -138,10 +165,39 @@ body {
 }
 
 /* Description Page Styles */
+.description-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    border: 2px solid #bfbfbf;
+    background-color: #dcdcdc;
+    margin-top: 20px;
+}
+
+.description-grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 60%;
+    width: 1px;
+    background-color: #ff6600;
+}
+
+.description-column {
+    padding: 10px 15px;
+}
+
 .description-section {
     background-color: #E8E8E8;
     padding: 20px;
     margin-bottom: 20px;
+    border-bottom: 2px solid #bfbfbf;
+}
+
+.description-column .description-section:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
 }
 
 .description-section h2 {
@@ -479,6 +535,19 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .two-column::before {
+        display: none;
+    }
+
+    .two-column>div {
+        border-right: none;
+        border-bottom: 2px solid #bfbfbf;
+    }
+
+    .two-column>div:last-child {
+        border-bottom: none;
+    }
+
     .header {
         flex-direction: column;
         /* text-align: center; */
@@ -488,5 +557,13 @@ body {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+    }
+
+    .description-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .description-grid::before {
+        display: none;
     }
 }
