@@ -35,12 +35,15 @@ body {
 .logo-column {
     display: flex;
     align-items: center;
+    background-color: white;
+    padding: 10px;
 }
 
 .logo-img {
     width: 80px;
     height: auto;
     max-height: 80px;
+    background-color: white;
 }
 
 .header-right-column {
@@ -50,7 +53,7 @@ body {
 }
 
 .department-title {
-    color: white;
+    color: black;
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -478,7 +481,7 @@ body {
 
     .header {
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .footer {
