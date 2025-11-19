@@ -93,7 +93,8 @@ body {
 }
 
 .nav a.active {
-    background-color: #FF6600;
+    /* background-color: #FF6600; */
+    color: orange;
 }
 
 /* Main Content */
