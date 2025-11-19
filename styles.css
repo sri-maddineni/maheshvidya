@@ -1,0 +1,488 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/aum3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(240, 240, 240, 0.95);
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #FF6600, #FF8533, #FF6600);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.logo-column {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    max-height: 80px;
+}
+
+.header-right-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.department-title {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+.nav {
+    background-color: #000000;
+    padding: 0;
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav li {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.nav a:hover {
+    background-color: #666666;
+}
+
+.nav a.active {
+    background-color: #FF6600;
+}
+
+/* Main Content */
+.main-content {
+    padding: 30px;
+}
+
+/* Two Column Layout for Home */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.content-section {
+    background-color: #E8E8E8;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.content-section p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Single Column Layout */
+.single-column {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Description Page Styles */
+.description-section {
+    background-color: #E8E8E8;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.description-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.description-section p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.description-section ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.description-section li {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.note-text {
+    font-size: 13px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Table Styles */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.data-table caption {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #000;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.data-table th {
+    background-color: #D3D3D3;
+    font-weight: bold;
+}
+
+.data-table td {
+    background-color: white;
+}
+
+/* Form Styles */
+.form-container {
+    background-color: #E8E8E8;
+    padding: 30px;
+    border: 2px solid #FF6600;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.form-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+}
+
+.form-group input[type="number"] {
+    width: 80px;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group .gender-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-group .gender-group label {
+    display: inline;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.form-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.completion-message {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #000;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #999;
+    color: white;
+    border-radius: 3px;
+}
+
+.form-buttons button:hover {
+    background-color: #777;
+}
+
+/* GPA Calculator Styles */
+.gpa-container {
+    background-color: #E8E8E8;
+    padding: 30px;
+    border: 2px solid #FF6600;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gpa-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.gpa-instructions {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gpa-form {
+    margin-top: 20px;
+}
+
+.gpa-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.gpa-table th {
+    background-color: #D3D3D3;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.gpa-table td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.gpa-table input {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.gpa-result {
+    margin: 20px 0;
+}
+
+.gpa-result label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.gpa-result input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: #E0E0E0;
+    width: 100px;
+}
+
+.gpa-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gpa-buttons button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #999;
+    color: white;
+    border-radius: 3px;
+}
+
+.gpa-buttons button:hover {
+    background-color: #777;
+}
+
+/* Survey Data Display */
+.survey-data-container {
+    background-color: #E8E8E8;
+    padding: 30px;
+    border: 2px solid #FF6600;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.survey-data-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.data-display {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.data-item {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.data-item label {
+    font-weight: bold;
+    color: #000;
+}
+
+.data-item span {
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #FF6600;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-left {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-center {
+    font-size: 14px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
